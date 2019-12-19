@@ -21,10 +21,10 @@ library(ggplot2)
 
 Read in the pre, during, and post dorian rasters. Read in the shapefile
 ```{r}
-pre <- raster("preDorian.tif")
-during <- raster("Dorian.tif")
-post <- raster("postDorian.tif")
-nassau <- shapefile("new_providence.shp")
+pre <- raster("data/preDorian.tif")
+during <- raster("data/Dorian.tif")
+post <- raster("data/postDorian.tif")
+nassau <- shapefile("data/new_providence.shp")
 ```
 
 Mask the image so that only the landform is showing.
